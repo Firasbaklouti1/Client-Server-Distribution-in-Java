@@ -59,9 +59,7 @@ process.
 3.  Preventing Network Caching (.reset())\
     In the server's main loop, the following method is crucial:
 
-```{=html}
-<!-- -->
-```
+
     out.reset();
     out.writeUnshared(state);
 
