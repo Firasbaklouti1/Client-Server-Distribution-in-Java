@@ -66,10 +66,10 @@ public class LocalMain extends JPanel {
                 game.movePaddle(1, Paddle.DIRECTION_DOWN);
                 break;
             // Player 2 controls
-            case KeyEvent.VK_P:
+            case KeyEvent.VK_UP:
                 game.movePaddle(2, Paddle.DIRECTION_UP);
                 break;
-            case KeyEvent.VK_M:
+            case KeyEvent.VK_DOWN:
                 game.movePaddle(2, Paddle.DIRECTION_DOWN);
                 break;
         }

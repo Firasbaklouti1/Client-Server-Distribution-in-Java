@@ -21,27 +21,9 @@ src/
 
 ```
 
-### Network Multiplayer
-Play across a network with two separate computers.
 
-**Start Server:**
-```bash
-java server.PongServer
-```
 
-**Start Client(s):**
-```bash
-# Connect to localhost
-java client.PongClient
-
-# Connect to specific server
-java client.PongClient 192.168.1.100
-
-# Connect to specific server and port
-java client.PongClient 192.168.1.100 12345
-```
-
-**Controls (Network Mode):**
+**Controls:**
 - Arrow Up / `A` : Move paddle up
 - Arrow Down / `Q` : Move paddle down
 
@@ -64,7 +46,7 @@ Edit `GameSetting.java` to customize:
 
 ### Compile
 ```bash
-javac -d out src/**/*.java
+javac -d out src/game/*.java src/client/*.java src/server/*.java
 ```
 
 ### Run Local Game
@@ -103,3 +85,5 @@ The game uses Java Object Serialization over TCP/IP:
 - ✅ Thread-safe game state
 - ✅ Graceful disconnection handling
 
+## Documentation
+Check out our [documentation](documentation.md).

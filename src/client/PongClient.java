@@ -112,9 +112,9 @@ public class PongClient {
             // Send movement command based on key pressed
             // UP: Arrow Up, A, or P
             // DOWN: Arrow Down, Q, or M
-            if (keyCode == KeyEvent.VK_UP || keyCode == KeyEvent.VK_A || keyCode == KeyEvent.VK_P) {
+            if (keyCode == KeyEvent.VK_UP || keyCode == KeyEvent.VK_A ) {
                 sendCommand(Paddle.DIRECTION_UP);
-            } else if (keyCode == KeyEvent.VK_DOWN || keyCode == KeyEvent.VK_Q || keyCode == KeyEvent.VK_M) {
+            } else if (keyCode == KeyEvent.VK_DOWN || keyCode == KeyEvent.VK_Q ) {
                 sendCommand(Paddle.DIRECTION_DOWN);
             }
         } catch (IOException ex) {
