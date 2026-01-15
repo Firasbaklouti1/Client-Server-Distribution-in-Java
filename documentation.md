@@ -26,7 +26,7 @@ Nous avons opté pour une architecture **Client-Serveur Centralisée** (Server-A
 
 ```mermaid
 graph TD
-    S(PongServer\nÉtat Global)
+    S(PongServer État Global)
     C1(Client 1 Joueur 1)
     C2(Client 2 Joueur 2)
 
@@ -92,11 +92,11 @@ Plusieurs threads accèdent simultanément à l'objet partagé `gameState` :
 
 ```mermaid
 graph TD
-    State(PongGameState\nRessource Partagée\nLOCK)
+    State(PongGameState Ressource Partagée LOCK)
     
     T1((Thread Player 1))
     T2((Thread Player 2))
-    Main((Thread\nGameLoop))
+    Main((ThreadGameLoop))
 
     T1 -- movePaddle --> State
     T2 -- movePaddle --> State
